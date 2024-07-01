@@ -1,4 +1,4 @@
-package vn.velacorp.assignment.models;
+package vn.velacorp.assignment.model;
 
 import lombok.Getter;
 import lombok.Setter;

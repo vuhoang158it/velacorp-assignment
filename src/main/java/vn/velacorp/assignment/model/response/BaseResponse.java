@@ -1,8 +1,8 @@
-package vn.velacorp.assignment.models.responses;
+package vn.velacorp.assignment.model.response;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import vn.velacorp.assignment.models.ERROR;
+import vn.velacorp.assignment.model.ERROR;
 
 @Data
 public class BaseResponse<T> {

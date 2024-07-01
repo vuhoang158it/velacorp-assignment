@@ -6,28 +6,28 @@ spring:
   application:
     name: velacorp-assignment
   datasource:
-    url: jdbc:postgresql://localhost:5432/cms
-    password: 123@123aA
+    url: jdbc:postgresql://localhost:5432/velacorp
+    password: velacorp@123
     driver-class-name: org.postgresql.Driver
-    username: postgres
+    username: velacorp
     hikari:
       connection-timeout: 60000
       maximum-pool-size: 25
       minimum-idle: 5
       idle-timeout: 600000
       max-lifetime: 1800000
-    jpa:
-      generate-ddl: false
-      hibernate.ddl-auto: none
-      open-in-view: false
-      show-sql: false
-      properties:
-        hibernate:
-          dialect: org.hibernate.dialect.PostgreSQLDialect
-          format_sql: true
-          jdbc.batch_size: 1000
-          order_inserts: true
-
+  jpa:
+    generate-ddl: false
+    hibernate.ddl-auto: none
+    open-in-view: false
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        jdbc.batch_size: 1000
+        order_inserts: true
+        default_schema: assignment
 springdoc:
   swagger-ui:
     operationsSorter: method

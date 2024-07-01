@@ -7,9 +7,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
-import vn.velacorp.assignment.models.ApiException;
-import vn.velacorp.assignment.models.ERROR;
-import vn.velacorp.assignment.models.responses.BaseResponse;
+import vn.velacorp.assignment.model.ApiException;
+import vn.velacorp.assignment.model.ERROR;
+import vn.velacorp.assignment.model.response.BaseResponse;
 
 @ControllerAdvice
 public class GlobalExceptionHandle {

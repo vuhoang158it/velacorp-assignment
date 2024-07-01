@@ -1,4 +1,4 @@
-package vn.velacorp.assignment.utils;
+package vn.velacorp.assignment.util;
 
 import lombok.Data;
 import org.apache.commons.lang3.StringUtils;

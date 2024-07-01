@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: my_postgres
+    environment:
+      POSTGRES_USER: velacorp
+      POSTGRES_PASSWORD: velacorp@123
+      POSTGRES_DB: velacorp
+    ports:
+      - "5432:5432"
