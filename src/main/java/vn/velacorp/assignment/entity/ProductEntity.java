@@ -1,10 +1,14 @@
 package vn.velacorp.assignment.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table(name = "products")
 public class ProductEntity {
     @Id
@@ -12,6 +16,6 @@ public class ProductEntity {
     private Long id;
     private String name;
     private String description;
-    private Double price;
+    private BigDecimal price;
     private Integer stockQuantity;
 }

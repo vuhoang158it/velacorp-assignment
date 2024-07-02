@@ -6,9 +6,9 @@ import vn.velacorp.assignment.model.ERROR;
 
 @Data
 public class BaseResponse<T> {
-    @Schema(description = "Mã code kết quả của api", example = "1")
+    @Schema(description = "Mã code kết quả của API", example = "1")
     private int code;
-    @Schema(description = "Thông báo lỗi của api", example = "SUCCESS")
+    @Schema(description = "Thông báo lỗi của API", example = "SUCCESS")
     private String message;
     private T data;
 

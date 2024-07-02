@@ -10,15 +10,15 @@ import java.util.List;
 
 public interface ProductService {
 
-    Long createProduct(CreateProductRequest request);
+    Long createProduct(CreateProductRequest request) throws ApiException;
 
     ProductDTO getProductDetail(Long id) throws ApiException;
 
-    Long updateProduct(Long id, UpdateProductRequest request);
+    Long updateProduct(Long id, UpdateProductRequest request) throws ApiException;
 
     void deleteProduct(Long id) throws ApiException;
 
     List<ProductDTO> getAllProducts();
 
-    Page<ProductDTO> searchProducts(String name, String description, int page, int size);
+    Page<ProductDTO> searchProducts(String name, String description, int pageNumber, int pageSize);
 }

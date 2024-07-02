@@ -27,7 +27,7 @@ public class LoggingAspect {
     }
 
 
-    @Pointcut("execution(* vn.velacorp.assignment.controllers..*(..)))")
+    @Pointcut("execution(* vn.velacorp.assignment.controller..*(..)))")
     protected void restControllers() {
     }
 

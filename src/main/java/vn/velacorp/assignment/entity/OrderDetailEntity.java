@@ -1,10 +1,14 @@
 package vn.velacorp.assignment.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.math.BigDecimal;
 
 @Entity
-@Data
+@Getter
+@Setter
 @Table(name = "order_details")
 public class OrderDetailEntity {
     @Id
@@ -13,5 +17,5 @@ public class OrderDetailEntity {
     private Long orderId;
     private Long productId;
     private Integer quantity;
-    private Double unitPrice;
+    private BigDecimal unitPrice;
 }

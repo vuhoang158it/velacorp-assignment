@@ -28,6 +28,8 @@ spring:
         jdbc.batch_size: 1000
         order_inserts: true
         default_schema: assignment
+  cache:
+    cache-names: products, orders
 springdoc:
   swagger-ui:
     operationsSorter: method

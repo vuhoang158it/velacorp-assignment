@@ -12,7 +12,7 @@ public class PagingResponse<T> extends BaseResponse<T> {
     @Schema(description = "Tổng số bản ghi", example = "100")
     private long totalElement;
     @Schema(description = "Số bản ghi mỗi trang", example = "20")
-    private int size;
+    private int pageSize;
     @Schema(description = "Dữ liệu trả về")
     private T data;
 }
