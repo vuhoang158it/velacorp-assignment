@@ -85,12 +85,6 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    @Cacheable(value = "products", key = "'allProducts'")
-    public List<ProductDTO> getAllProducts() {
-        return productRepository.findAll().stream().map(this::convertToProductDTO).toList();
-    }
-
-    @Override
     public Page<ProductDTO> searchProducts(String name, String description, int pageNumber, int pageSize) {
         return productRepository.searchProducts(name, description, pageNumber, pageSize);
     }

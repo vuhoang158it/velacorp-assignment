@@ -3,7 +3,9 @@ package vn.velacorp.assignment.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import vn.velacorp.assignment.enums.OrderStatus;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
@@ -19,6 +21,8 @@ public class OrderEntity {
     private String address;
     private String email;
     private String phoneNumber;
-    private String status;
-    private Double totalAmount;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "status", nullable = false)
+    private OrderStatus status;
+    private BigDecimal totalAmount;
 }

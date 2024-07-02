@@ -18,7 +18,5 @@ public interface ProductService {
 
     void deleteProduct(Long id) throws ApiException;
 
-    List<ProductDTO> getAllProducts();
-
     Page<ProductDTO> searchProducts(String name, String description, int pageNumber, int pageSize);
 }

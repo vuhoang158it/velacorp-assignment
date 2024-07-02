@@ -69,17 +69,6 @@ public class ProductController {
     }
 
     @GetMapping
-    @Operation(summary = "Lấy danh sách tất cả các sản phẩm",
-            description = "Lấy danh sách tất cả các sản phẩm để xem toàn bộ danh sách sản phẩm có sẵn trong cửa hàng.",
-            tags = {"Quản lý Sản phẩm"}
-    )
-    public BaseResponse<List<ProductDTO>> getAllProducts() {
-        BaseResponse<List<ProductDTO>> response = new BaseResponse<>();
-        response.setData(productService.getAllProducts());
-        return response;
-    }
-
-    @GetMapping("/search")
     @Operation(summary = "Tìm kiếm sản phẩm",
             description = "Tìm kiếm sản phẩm dựa trên tên hoặc mô tả để dễ dàng tìm kiếm sản phẩm cụ thể.",
             tags = {"Quản lý Sản phẩm"}

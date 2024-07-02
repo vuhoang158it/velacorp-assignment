@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 import vn.velacorp.assignment.entity.OrderEntity;
 
 @Repository
-public interface OrderRepository extends JpaRepository<OrderEntity, Long> {
+public interface OrderRepository extends JpaRepository<OrderEntity, Long>, OrderRepositoryCustom {
 }
